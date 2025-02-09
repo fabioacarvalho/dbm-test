@@ -1,6 +1,6 @@
+using Microsoft.AspNetCore.Mvc;
 using Dbm.Api.Products.Dtos;
 using Dbm.Api.Products.Services;
-using Microsoft.AspNetCore.Mvc;
 
 namespace Dbm.Api.Products.Controllers;
 
