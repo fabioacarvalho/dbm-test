@@ -138,4 +138,6 @@ docker compose up --build
 
 Para ter acesso a documentação da API, rode a aplicação atráves do container Docker já configurado e acesso o link:
 
-[Documentação API com Swagger](http://127.0.0.1:5000/swagger)
+[Documentação API com Swagger](http://127.0.0.1:8000/swagger)
+
+> Observação: A aplicação está rodando na porta 8000 ao inves da 5000 exposta do container, ou seja, ao acessar a aplicação, lembre-se de acessar pela porta 8000 `127.0.0.1:8000`.
