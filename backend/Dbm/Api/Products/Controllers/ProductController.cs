@@ -15,7 +15,8 @@ public class ProductController : ControllerBase
         _productService = productService;
     }
 
-    [HttpGet]
+    [HttpGet(Name = "FindAllProducts")]
+    // [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(PagedResponse<ProductResponse>))]
     public IActionResult FindAll()
     {
         var body = _productService.FindAll();

@@ -10,10 +10,9 @@ public class DbmDbContext : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder builder)
     {   
         // Se for usar o SQL Server no Docker
-        // builder.UseSqlServer("Server=sqlserver;Database=Dbm;User Id=sa;Password=root;");
+        // builder.UseSqlServer("Server=sqlserver;Database=Dbm;User Id=sa;Password=YourStrong!Passw0rd;Trusted_Connection=True;");
         
-        // Se for usar o SQL Server local
-        builder.UseSqlServer("Server=Localhost;Database=Dbm;Trusted_Connection=True;");
+        builder.UseSqlServer("Server=sqlserver;Database=Dbm;User Id=sa;Password=YourStrong!Passw0rd;TrustServerCertificate=True;");
     }
 
     protected override void OnModelCreating(ModelBuilder builder)
