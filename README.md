@@ -132,6 +132,8 @@ docker compose up --build
 
 > Este comando vai gerar o build do projeto e subir a aplicação, para rodar novamente basta remover a flag --build do comando.
 
+---
+
 # Documentação da API
 
 Para ter acesso a documentação da API, rode a aplicação atráves do container Docker já configurado e acesso o link:
