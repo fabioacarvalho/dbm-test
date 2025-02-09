@@ -1,0 +1,43 @@
+services:
+  db:
+    image: mysql:8.1.0
+    env_file:
+      - ./db/.env
+    ports:
+      - "3306:3306"
+    networks:
+      - dbm_network
+    volumes:
+      - db_data:/var/lib/mysql
+
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    networks:
+      - dbm_network
+
+
+  backend:
+    build:
+      context: ./backend/Dbm
+      dockerfile: Dockerfile
+    ports:
+      - "8000:5000"  # Acesse atraves de http://localhost:8000
+    networks:
+      - dbm_network
+    volumes:
+      - ./backend/Dbm:/app
+    env_file:
+      - ./backend/Dbm/.env
+    depends_on:
+      - db
+
+volumes:
+  db_data:
+
+networks:
+  dbm_network:
+    driver: bridge

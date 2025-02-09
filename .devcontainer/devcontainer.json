@@ -1,0 +1,18 @@
+{
+    "name": "C# ASP.NET Core Dev Container",
+    "dockerFile": "Dockerfile",
+    "context": "..",
+    "appPort": [5000, 5001],
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+        "ms-dotnettools.csharp",
+        "ms-azuretools.vscode-azurefunctions",
+        "ms-vscode.vscode-node-azure-pack",
+        "PKief.material-icon-theme",
+        "ms-dotnettools.vscode-dotnet-runtime",
+        "ms-dotnettools.csdevkit"
+    ],
+    "postCreateCommand": "dotnet tool install --global dotnet-ef && dotnet restore && export PATH='$PATH:/root/.dotnet/tools'"
+}

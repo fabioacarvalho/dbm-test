@@ -1,0 +1,6 @@
+@Dbm_HostAddress = http://localhost:5012
+
+GET {{Dbm_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
