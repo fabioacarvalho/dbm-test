@@ -1,3 +1,41 @@
+# Comece por aqui
+
+Para iniciar o projeto siga os passo abaixo:
+
+__1 - Clonar o repositorio:__
+
+Dentro do seu local faça o clone do repositório:
+```bash
+git clone https://github.com/fabioacarvalho/dbm-test.git
+```
+
+__2 - Acesse a pasta do projeto:__
+
+```bash
+cd dbm-test
+```
+
+__3 - Gerar o build e subir o projeto com o Docker:__
+
+Para isso você precisa ter o Docker instalado e configurado na sua máquina.
+
+```bash
+docker compose up --build
+```
+
+> Está flag --build serve para criar o build do projeto, para as demais vezes que iniciar o mesmo basta rodar o comando sem a flag --build.
+
+__4 - Acessando a aplicação:__
+
+No seu navegador você pode acessar `http://localhost:5077` ou clique aqui: [Projeto Dbm Test](http://localhost:5077).
+
+__5 - Documentação da API:__
+
+Para acessar a documentação do API acesse: [Documentação API](http://localhost:8000/swagger)
+
+
+---
+
 # Estrutura do Projeto
 
 O projeto está dividido em modulos sendo eles:
