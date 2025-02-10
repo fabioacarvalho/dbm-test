@@ -207,8 +207,8 @@ O frontend utilizado o padrão MVC (Model, view e controller), além de implemen
     │   └── NomeDoController
     │       └── *.cs
     ├── Models
-    │   ├── NomeDaModel
-    │   │   └── *.cs
+    │   └── NomeDaModel
+    │       └── *.cs
     ├── Services
     │   └── *.cs
     └── Views
