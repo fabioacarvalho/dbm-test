@@ -4,8 +4,7 @@ O projeto está dividido em modulos sendo eles:
 
 - backend: Contém os arquivos do projeto back-end em ASP .NET Core Web API;
 - frontend: Desenvolvimento do projeto front-end;
-- db: Contém as configurações de ambiente do banco de dados;
-- server: Contém as configurações do Nginx.
+- server: Contém pré configurações do Nginx.
 
 <br>
 
@@ -72,6 +71,13 @@ O projeto está dividido em modulos sendo eles:
     ├── README.md
     └── nginx.conf
 ```
+
+<br>
+
+## Imagens Docker
+
+- Backend: [DockerHub Image Backend](https://hub.docker.com/r/ofabioacarvalho/dbm-api)
+- Frontend: [DockerHub Image Frontend](https://hub.docker.com/r/ofabioacarvalho/dbm-frontend)
 
 <br>
 
