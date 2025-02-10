@@ -202,16 +202,16 @@ O frontend utilizado o padrão MVC (Model, view e controller), além de implemen
 ## Estrutura do Projeto
 
 ```bash
-├── frontend
-│   ├── Controllers
-│   │   └── NomeDoController
-│   │       └── *.cs
-│   ├── Models
-│   │   ├── NomeDaModel
-│   │   │   └── *.cs
-│   ├── Services
-│   │   └── *.cs
-└── ├── Views
+└── frontend
+    ├── Controllers
+    │   └── NomeDoController
+    │       └── *.cs
+    ├── Models
+    │   ├── NomeDaModel
+    │   │   └── *.cs
+    ├── Services
+    │   └── *.cs
+    └── Views
         └── Product
             └── *.cshtml
 ```
