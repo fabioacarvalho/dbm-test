@@ -185,3 +185,36 @@ Para ter acesso a documentação da API, rode a aplicação atráves do containe
 [Documentação API com Swagger](http://127.0.0.1:8000/swagger)
 
 > Observação: A aplicação está rodando na porta 8000 ao inves da 5000 exposta do container, ou seja, ao acessar a aplicação, lembre-se de acessar pela porta 8000 `127.0.0.1:8000`.
+
+---
+
+# Frontend
+
+O frontend utilizado o padrão MVC (Model, view e controller), além de implementar a camada service, ou seja:
+
+- Model: será responsavél por lidar com a camada de dados da aplicação como modelo.
+- View: Responsável pela apresentação dos dados ao cliente;
+- Controller: Responsável por lidar com os dados entre model e view, fazendo o meio de campo entre cliente e servidor.
+- Services: Responsável por lidar com as chamadas a API e tratamento dos dados.
+
+> Para utilizar o projeto você deve seguir o padrão já implementado seguindo o padrão MVC e os principios do SOLID, trabalhando com interfaces e responsabilidades únicas por intem, desacoplando a aplicação.
+
+## Estrutura do Projeto
+
+```bash
+├── frontend
+│   ├── Controllers
+│   │   └── NomeDoController
+│   │       └── *.cs
+│   ├── Models
+│   │   ├── NomeDaModel
+│   │   │   └── *.cs
+│   ├── Services
+│   │   └── *.cs
+└── ├── Views
+        └── Product
+            └── *.cshtml
+```
+
+
+  
