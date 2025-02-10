@@ -1,0 +1,10 @@
+@model frontend.Models.ProductModels.ProductDto
+
+<h2>Product Details</h2>
+<hr />
+<div>
+    <p><strong>Name:</strong> @Model.Name</p>
+    <p><strong>Price:</strong> @Model.Price.ToString("C")</p>
+    <p><strong>Description:</strong> @Model.Description</p>
+</div>
+<a asp-action="Index" class="btn btn-secondary">Back to List</a>

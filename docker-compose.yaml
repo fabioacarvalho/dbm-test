@@ -27,6 +27,19 @@ services:
     depends_on:
       - sqlserver
 
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "5077:80"
+    networks:
+      - dbm_network
+    volumes:
+      - ./frontend:/app
+    depends_on:
+      - backend
+
 volumes:
   sqlserver_data:
 

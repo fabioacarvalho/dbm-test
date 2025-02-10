@@ -18,5 +18,10 @@ public class DbmDbContext : DbContext
     protected override void OnModelCreating(ModelBuilder builder)
     {
         builder.ApplyConfiguration(new ProductEntityConfig());
+
+
+        builder.Entity<Product>()
+            .HasIndex(p => p.Name)
+            .IsUnique();
     }
 }

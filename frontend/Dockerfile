@@ -1,15 +1,11 @@
-FROM node:16-alpine
-
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS dev
 WORKDIR /app
 
-COPY package*.json ./
+COPY frontend.csproj ./
+RUN dotnet restore
 
-RUN npm install
+COPY . ./
 
-COPY . .
+EXPOSE 80
 
-RUN npm run build
-
-EXPOSE 3000
-
-CMD ["npm", "run", "preview"]
+ENTRYPOINT ["dotnet", "watch", "run", "--urls", "http://0.0.0.0:80"]
